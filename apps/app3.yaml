@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: getact-app-morning
+  name: d34525
   namespace: argocd
 spec:
   destination:
