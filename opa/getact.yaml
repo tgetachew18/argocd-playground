@@ -11,7 +11,7 @@ data:
     enemies=aliens
     lives=3
     enemies.cheat=true
-    enemies.cheat.level=noGoodRotten
+    enemies.cheat.level=noGoodRottenbutt
     secret.code.passphrase=UUDDLRLRBABAS
     secret.code.allowed=true
     secret.code.lives=30
