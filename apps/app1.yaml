@@ -11,7 +11,6 @@ spec:
     path: /opa
     repoURL: 'https://github.com/tgetachew18/argocd-playground.git'
     targetRevision: master
-spec:
   syncPolicy:
     automated:
       prune: true
