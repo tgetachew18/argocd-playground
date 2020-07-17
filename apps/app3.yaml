@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: getact-app-morning
+  namespace: argocd
+spec:
+  destination:
+    namespace: getact
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: bopa
+    repoURL: 'https://github.com/tgetachew18/argocd-playground.git'
+    targetRevision: master
+    directory:
+      recurse: true
+  syncPolicy:
+    automated:
+      prune: true
+  project: default
+
