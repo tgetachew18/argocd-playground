@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: getact-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: getact
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: /opa
+    repoURL: 'https://github.com/tgetache18/argocd-playground.git'
+    targetRevision: master
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+  project: default
+
