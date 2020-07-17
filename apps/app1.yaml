@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: /opa
-    repoURL: 'https://github.com/tgetache18/argocd-playground.git'
+    repoURL: 'https://github.com/tgetachew18/argocd-playground.git'
     targetRevision: master
 spec:
   syncPolicy:
